@@ -24,15 +24,15 @@ module.exports.taxCalculator = function taxCalculator(salary) {
             percentage: 0
         },
         {
-            amount: 17500,
+            amount: 17500, // <= 30,000
             percentage: 0.05
         },
         {
-            amount: 20000,
+            amount: 20000, // <= 50,000
             percentage: 0.1
         },
         {
-            percentage: 0.2
+            percentage: 0.2 // > 50,000
         }
     ]
     let bracket = 0
