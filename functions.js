@@ -2,7 +2,7 @@
 /*
  * Must provide DOB in YYYY-MM-DD format
  */
-module.exports.ageCaluator = function ageCalculator(dob) {
+module.exports.calculateAge = function calculateAge(dob) {
     const dobDate = new Date(dob)
     if (dobDate.toString() === 'Invalid Date') {
         return false
@@ -17,7 +17,7 @@ module.exports.ageCaluator = function ageCalculator(dob) {
     return age;
 }
 
-module.exports.taxCalculator = function taxCalculator(salary) {
+module.exports.calculateTax = function calculateTax(salary) {
     const taxBrackets = [
         {
             amount: 12500,
@@ -49,7 +49,7 @@ module.exports.taxCalculator = function taxCalculator(salary) {
     return tax
 }
 
-module.exports.greetBot = function greetBot(name, showWeather = true) {
+module.exports.greet = function greet(name, showWeather = true) {
     let weather = ''
     if (showWeather) {
         const weatherOptions = [

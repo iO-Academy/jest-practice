@@ -10,7 +10,7 @@ To run the tests, run `npm run test`
 
 ### Exercise
 
-Test the functions in order, starting with `ageCaluator`, followed by `taxCalculator` and `greetBot`.
+Test the functions in order, starting with `calculateAge`, followed by `calculateTax` and `greet`.
 
 Ensure you complete success, failure and malformed tests where possible.
 
